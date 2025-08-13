@@ -43,7 +43,7 @@ class SearchThread(QtCore.QThread):
 class SearchApp(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Massive Text Searcher")
+        self.setWindowTitle("Ti Search")
         self.setGeometry(200, 200, 900, 600)
         self.setStyleSheet("""
             QWidget { background-color: #121212; color: white; font-family: Consolas; }
@@ -168,3 +168,4 @@ if __name__ == "__main__":
     window = SearchApp()
     window.show()
     sys.exit(app.exec_())
+
